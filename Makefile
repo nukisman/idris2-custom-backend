@@ -24,6 +24,9 @@ build-lazy:
 		-p network \
 		src/Lazy.idr
 
-run-lazy-0:
-	./build/exec/lazy-idris2 --cg lazy src/Hello.idr -o hello
+run-lazy:
+	IDRIS2_PREFIX=/usr/local/Cellar/idris2/0.6.0/libexec \
+	./build/exec/lazy-idris2 \
+		-o hello.js \
+		src/Hello.idr
 
