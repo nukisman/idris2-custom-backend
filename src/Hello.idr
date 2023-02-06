@@ -1,5 +1,6 @@
 module Main
 
 public export
-hello : Bool
-hello = True
+main : IO ()
+main = do
+  putStr "Hello"
